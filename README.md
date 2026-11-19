@@ -1,4 +1,4 @@
-# Game Lingo for Android TV / Google TV 1.1.0 (31)
+# Game Lingo for Android TV / Google TV 1.1.0 (33)
 
 Corresponding source for the dedicated TV build of com.mustafasenocak.gamelingo.
 Copyright (C) 2026 Mustafa SENOCAK. Game Lingo-owned code is distributed under
@@ -43,13 +43,27 @@ only displays captions. HDMI overlay support depends on the television model.
 The user can stop the receiver on the TV or disconnect from the phone, and a
 session expires after two hours. The app never pairs with other TVs automatically.
 
-The Android phone PS5 implementation is not included in this TV source release.
-This archive corresponds only to the dedicated television binary.
+The Android phone PS5 implementation is not included or advertised by this TV
+release. It requires separate integration, dependency compatibility and testing.
 
-Download [GameLingo-TV-1.1.0-31-source.zip](GameLingo-TV-1.1.0-31-source.zip).
-The archive contains SOURCE-MANIFEST.json and all TV client build inputs.
-See [SHA256SUMS](SHA256SUMS) to verify the download.
+TV captions require an active Game Lingo Premium subscription. The TV verifies
+the store reference independently with the backend over HTTPS and rechecks at
+least every five minutes. The same phone subscription covers the TV. Free camera
+trial time does not unlock the receiver. QR pairing uses protocol version 2 and
+requires phone version 1.1.0 (32) or newer.
 
-Build 31 adds a 15-second local subtitle preview to verify TV overlay setup before pairing.
+## Store review access
 
-[TV setup preview demonstration](tv-setup-preview-demo31.mp4) · [Paired-caption foreground-service demonstration](tv-foreground-service-demo.mp4)
+The Review access screen is for authorized store review. A private, reusable code
+is verified by the backend and grants only receiver testing. It does not create a
+subscription or unlock the phone's paid services. The fixture sends caption frames
+through the same pinned-TLS receiver and overlay used by a paired phone. The test
+can be stopped explicitly and ends after ten minutes; the credential can be reused.
+The actual code, server digest and server configuration are not distributed here.
+There is no public free-preview bypass. Source/build rights remain unrestricted
+by the service's subscription requirement.
+
+Run the entitlement regression tests with :app:testDebugUnitTest.
+
+Download [GameLingo-TV-1.1.0-33-source.zip](GameLingo-TV-1.1.0-33-source.zip).
+See [SHA256SUMS](SHA256SUMS). Earlier preview builds are historical, not the current paid release.
