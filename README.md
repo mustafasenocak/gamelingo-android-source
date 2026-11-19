@@ -1,4 +1,4 @@
-# Game Lingo for Android TV / Google TV 1.1.0 (29)
+# Game Lingo for Android TV / Google TV 1.1.0 (30)
 
 Corresponding source for the dedicated TV build of com.mustafasenocak.gamelingo.
 Copyright (C) 2026 Mustafa SENOCAK. Game Lingo-owned code is distributed under
@@ -46,6 +46,6 @@ session expires after two hours. The app never pairs with other TVs automaticall
 The Android phone PS5 implementation is not included in this TV source release.
 This archive corresponds only to the dedicated television binary.
 
-Download [GameLingo-TV-1.1.0-29-source.zip](GameLingo-TV-1.1.0-29-source.zip).
+Download [GameLingo-TV-1.1.0-30-source.zip](GameLingo-TV-1.1.0-30-source.zip).
 The archive contains SOURCE-MANIFEST.json and all TV client build inputs.
 See [SHA256SUMS](SHA256SUMS) to verify the download.
